@@ -93,13 +93,11 @@ final class CreateViewController: UIViewController {
 //        $0.font = .systemFont(ofSize: 12, weight: .regular)
 //    }
     
-    private let memoTextView = UITextField().then {
+    private let memoTextView = UITextView().then {
         $0.backgroundColor = .white
         $0.layer.borderWidth = 1
         $0.layer.borderColor = UIColor.gray2.cgColor
         $0.layer.cornerRadius = 5
-        $0.leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 14.0, height: 0.0))
-        $0.leftViewMode = .always
     }
     
     private let colorLabel = UILabel().then {
