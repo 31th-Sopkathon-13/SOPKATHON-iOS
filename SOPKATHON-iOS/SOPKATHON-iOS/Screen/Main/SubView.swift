@@ -19,6 +19,8 @@ class SubView: UIView {
         $0.addTarget(self, action: #selector(btnTapped),for: .touchUpInside)
     }
     
+    var rootVC: UIViewController?
+    
     override init(frame: CGRect){
         super.init(frame: frame)
         backgroundColor = .white
@@ -47,6 +49,9 @@ class SubView: UIView {
         }
     }
     @objc func btnTapped(){
-        print("tapped")
+        let CreateVC = CreateViewController()
+        if let rootVC = rootVC as? MainViewController {
+            rootVC.presentToCreate()
+        }
     }
 }
