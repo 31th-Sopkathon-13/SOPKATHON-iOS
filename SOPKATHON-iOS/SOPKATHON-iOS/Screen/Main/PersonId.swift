@@ -11,16 +11,16 @@ struct PersonId1 : Hashable{
     var name : String
 }
 extension PersonId1 {
-    static var idList : [PersonId1] = [PersonId1(name: "김정은"),
-                                       PersonId1(name: "황찬미")
+    static var idList : [PersonId1] = [PersonId1(name: "Seyeon"),
+                                       PersonId1(name: "Chanmi")
     ]
 }
 struct PersonId2 : Hashable{
     var name : String
 }
 extension PersonId2 {
-    static var idList : [PersonId2] = [PersonId2(name: "정윤선"),
-                                       PersonId2(name: "김민서")
+    static var idList : [PersonId2] = [PersonId2(name: "Seyeon"),
+                                       PersonId2(name: "Chanmi")
     ]
 }
 struct PersonId3 : Hashable{

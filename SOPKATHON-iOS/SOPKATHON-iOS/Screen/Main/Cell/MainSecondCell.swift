@@ -37,7 +37,7 @@ class MainSecondCell: UICollectionViewCell {
             $0.edges.equalToSuperview()
         }
        userId.snp.makeConstraints {
-           $0.leading.equalTo(image.snp.leading).offset(18)
+           $0.leading.equalTo(image.snp.leading).offset(16)
            $0.bottom.equalTo(image.snp.bottom).offset(-27)
        }
     }

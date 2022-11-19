@@ -17,7 +17,7 @@ class SubView: UIView {
         $0.text = "Re ; code"
         $0.font = UIFont(name: "Termina-Demi", size: 21.69)
     }
-    private lazy var btn = UIButton().then {
+     lazy var btn = UIButton().then {
         $0.setImage(UIImage(named: "Main/_Btn"), for: .normal)
     }
     
