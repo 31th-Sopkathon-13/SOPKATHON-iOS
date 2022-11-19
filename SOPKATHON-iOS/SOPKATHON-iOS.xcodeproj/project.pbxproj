@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090AEA38292941A2009FF50D /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AEA37292941A2009FF50D /* SubView.swift */; };
+		090AEA3C29294554009FF50D /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 090AEA3929294554009FF50D /* Pretendard-Bold.otf */; };
+		090AEA3D29294554009FF50D /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 090AEA3A29294554009FF50D /* Pretendard-Regular.otf */; };
+		090AEA3E29294554009FF50D /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 090AEA3B29294554009FF50D /* Pretendard-Medium.otf */; };
+		090AEA4D292960B1009FF50D /* PersonId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AEA4A292960B1009FF50D /* PersonId.swift */; };
+		090AEA4F292960B1009FF50D /* MainImageView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AEA4C292960B1009FF50D /* MainImageView .swift */; };
+		090AEA61292961D0009FF50D /* MainSecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AEA5E292961D0009FF50D /* MainSecondCell.swift */; };
+		090AEA62292961D0009FF50D /* MainThirdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AEA5F292961D0009FF50D /* MainThirdCell.swift */; };
+		090AEA63292961D0009FF50D /* MainFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AEA60292961D0009FF50D /* MainFirstCell.swift */; };
 		4ADEAB9E29291EAA001B63E3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4ADEAB9D29291EAA001B63E3 /* SnapKit */; };
 		4ADEABA129291EB3001B63E3 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 4ADEABA029291EB3001B63E3 /* Then */; };
 		4ADEABA429291EBF001B63E3 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4ADEABA329291EBF001B63E3 /* Moya */; };
@@ -40,6 +49,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		090AEA37292941A2009FF50D /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
+		090AEA4A292960B1009FF50D /* PersonId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonId.swift; sourceTree = "<group>"; };
+		090AEA4C292960B1009FF50D /* MainImageView .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainImageView .swift"; sourceTree = "<group>"; };
+		090AEA5E292961D0009FF50D /* MainSecondCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSecondCell.swift; sourceTree = "<group>"; };
+		090AEA5F292961D0009FF50D /* MainThirdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainThirdCell.swift; sourceTree = "<group>"; };
+		090AEA60292961D0009FF50D /* MainFirstCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFirstCell.swift; sourceTree = "<group>"; };
 		4ADEABA929293B9E001B63E3 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		4ADEABAB29293DF1001B63E3 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		4ADEABC2292962DB001B63E3 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
@@ -82,6 +97,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090AEA5D292961D0009FF50D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				090AEA5E292961D0009FF50D /* MainSecondCell.swift */,
+				090AEA5F292961D0009FF50D /* MainThirdCell.swift */,
+				090AEA60292961D0009FF50D /* MainFirstCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		4ADEABC1292962DB001B63E3 /* Font */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,7 +214,11 @@
 		4AFDABEE29290B4C00DA413E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				090AEA5D292961D0009FF50D /* Cell */,
+				090AEA4C292960B1009FF50D /* MainImageView .swift */,
+				090AEA4A292960B1009FF50D /* PersonId.swift */,
 				4AFDABF529290BD500DA413E /* MainViewController.swift */,
+				090AEA37292941A2009FF50D /* SubView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -353,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AFDAC0129290C9100DA413E /* MoyaLoggingPlugin.swift in Sources */,
+				090AEA4F292960B1009FF50D /* MainImageView .swift in Sources */,
 				4ADEABAA29293B9E001B63E3 /* UIFont+.swift in Sources */,
 				4AFDAC0929290D9D00DA413E /* Service.swift in Sources */,
 				4AFDABF429290BC500DA413E /* CreateViewController.swift in Sources */,
@@ -361,15 +391,20 @@
 				4AFDAC0D29290DA500DA413E /* DataModel.swift in Sources */,
 				4AFDAC1129291CE000DA413E /* UIViewController+.swift in Sources */,
 				4AFDAC0729290D9000DA413E /* NetworkConstant.swift in Sources */,
+				090AEA38292941A2009FF50D /* SubView.swift in Sources */,
 				4AFDAC0B29290DA100DA413E /* API.swift in Sources */,
 				4AFDAC0529290D7300DA413E /* BaseTargetType.swift in Sources */,
+				090AEA61292961D0009FF50D /* MainSecondCell.swift in Sources */,
 				4AFDABFD29290C2C00DA413E /* URLConstant.swift in Sources */,
 				4AFDABF629290BD500DA413E /* MainViewController.swift in Sources */,
 				4AFDABD62928FD1300DA413E /* SceneDelegate.swift in Sources */,
+				090AEA4D292960B1009FF50D /* PersonId.swift in Sources */,
+				090AEA63292961D0009FF50D /* MainFirstCell.swift in Sources */,
 				4AFDAC0F29290DD000DA413E /* UIView+.swift in Sources */,
 				4AFDABF229290BBC00DA413E /* DetailViewController.swift in Sources */,
 				4AFDABFF29290C4800DA413E /* NetworkResult.swift in Sources */,
 				4AFDAC0329290D5600DA413E /* GeneralResponse.swift in Sources */,
+				090AEA62292961D0009FF50D /* MainThirdCell.swift in Sources */,
 				4ADEABAC29293DF1001B63E3 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
