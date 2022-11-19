@@ -12,8 +12,6 @@
 		4ADEABA429291EBF001B63E3 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4ADEABA329291EBF001B63E3 /* Moya */; };
 		4AFDABD42928FD1300DA413E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFDABD32928FD1300DA413E /* AppDelegate.swift */; };
 		4AFDABD62928FD1300DA413E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFDABD52928FD1300DA413E /* SceneDelegate.swift */; };
-		4AFDABD82928FD1300DA413E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFDABD72928FD1300DA413E /* ViewController.swift */; };
-		4AFDABDB2928FD1300DA413E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AFDABD92928FD1300DA413E /* Main.storyboard */; };
 		4AFDABDD2928FD1400DA413E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AFDABDC2928FD1400DA413E /* Assets.xcassets */; };
 		4AFDABE02928FD1400DA413E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AFDABDE2928FD1400DA413E /* LaunchScreen.storyboard */; };
 		4AFDABF229290BBC00DA413E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFDABF129290BBC00DA413E /* DetailViewController.swift */; };
@@ -36,8 +34,6 @@
 		4AFDABD02928FD1300DA413E /* SOPKATHON-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOPKATHON-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFDABD32928FD1300DA413E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AFDABD52928FD1300DA413E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		4AFDABD72928FD1300DA413E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		4AFDABDA2928FD1300DA413E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4AFDABDC2928FD1400DA413E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AFDABDF2928FD1400DA413E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4AFDABE12928FD1400DA413E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -94,8 +90,6 @@
 				4AFDABE929290B1C00DA413E /* Network */,
 				4AFDABE829290B1600DA413E /* Screen */,
 				4AFDABE729290B0F00DA413E /* Resource */,
-				4AFDABD72928FD1300DA413E /* ViewController.swift */,
-				4AFDABD92928FD1300DA413E /* Main.storyboard */,
 			);
 			path = "SOPKATHON-iOS";
 			sourceTree = "<group>";
@@ -305,7 +299,6 @@
 			files = (
 				4AFDABE02928FD1400DA413E /* LaunchScreen.storyboard in Resources */,
 				4AFDABDD2928FD1400DA413E /* Assets.xcassets in Resources */,
-				4AFDABDB2928FD1300DA413E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,7 +312,6 @@
 				4AFDAC0129290C9100DA413E /* MoyaLoggingPlugin.swift in Sources */,
 				4AFDAC0929290D9D00DA413E /* Service.swift in Sources */,
 				4AFDABF429290BC500DA413E /* CreateViewController.swift in Sources */,
-				4AFDABD82928FD1300DA413E /* ViewController.swift in Sources */,
 				4AFDABD42928FD1300DA413E /* AppDelegate.swift in Sources */,
 				4AFDAC0D29290DA500DA413E /* DataModel.swift in Sources */,
 				4AFDAC1129291CE000DA413E /* UIViewController+.swift in Sources */,
@@ -339,14 +331,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		4AFDABD92928FD1300DA413E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4AFDABDA2928FD1300DA413E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4AFDABDE2928FD1400DA413E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
