@@ -52,7 +52,7 @@
 
 ### 🍞 화면 전환 플로우
 
-<img width="489" alt="KakaoTalk_Image_2022-11-20-02-24-07" src="https://user-images.githubusercontent.com/86944161/202863595-c0866fb3-0fa4-4405-b451-fa04a89c053a.png">
+![image](https://user-images.githubusercontent.com/86944161/202875644-d679a60c-669b-4362-8a13-d657ac9cdbc8.png)
 
 </br>
 
