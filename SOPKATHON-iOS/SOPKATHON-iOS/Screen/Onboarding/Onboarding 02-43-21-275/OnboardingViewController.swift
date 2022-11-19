@@ -14,6 +14,7 @@ import SnapKit
 class OnboardingViewController: UIViewController {
 
     // MARK: - UI Components
+    
     private let recordRelationsLabel: UILabel = {
         let label = UILabel()
         label.text = "소중한 관계를 기록해보세요"

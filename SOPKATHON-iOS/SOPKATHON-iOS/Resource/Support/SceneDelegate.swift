@@ -20,7 +20,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             
             let window = UIWindow(windowScene: windowScene)
             
-            let rootVC = OnboardingViewController()
+            let rootVC = DetailViewController()
             let navigation = UINavigationController(rootViewController: rootVC)
             
             window.rootViewController = navigation
