@@ -2,9 +2,9 @@ import UIKit
 import SnapKit
 import Then
 
-// MARK: - CreateViewController
+// MARK: - ModifyViewController
 
-final class CreateViewController: UIViewController {
+final class ModifyViewController: UIViewController {
     let btnList : [BtnList] = BtnList.titleList
     // MARK: - UI Components
     enum Section : Int, CaseIterable, Hashable {
@@ -15,7 +15,7 @@ final class CreateViewController: UIViewController {
         $0.register(CreateBtnCell.self, forCellWithReuseIdentifier: CreateBtnCell.reuserId)
     }
     private let mainLabel = UILabel().then {
-        $0.text = "관계 추가"
+        $0.text = "관계 수정"
         $0.textColor = UIColor.black
         $0.font = .systemFont(ofSize: 18, weight: .medium)
     }
@@ -36,12 +36,11 @@ final class CreateViewController: UIViewController {
     private let nameTextField = UITextField().then {
         $0.backgroundColor = .white
         $0.font = .systemFont(ofSize: 14, weight: .regular)
-        $0.textColor = UIColor.gray1
-        $0.placeholder = "이름을 입력하세요"
+        $0.placeholder = "Seyeon"
         $0.leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 14.0, height: 0.0))
         $0.leftViewMode = .always
         $0.layer.borderWidth = 1
-        $0.layer.borderColor = UIColor.gray2.cgColor
+        $0.layer.borderColor = UIColor.primary.cgColor
         $0.layer.cornerRadius = 5
     }
     
@@ -54,12 +53,11 @@ final class CreateViewController: UIViewController {
     private let birthTextField = UITextField().then {
         $0.backgroundColor = .white
         $0.font = .systemFont(ofSize: 14, weight: .regular)
-        $0.textColor = UIColor.gray1
-        $0.placeholder = "생일을 입력하세요"
+        $0.placeholder = "2001.02.16"
         $0.leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 14.0, height: 0.0))
         $0.leftViewMode = .always
         $0.layer.borderWidth = 1
-        $0.layer.borderColor = UIColor.gray2.cgColor
+        $0.layer.borderColor = UIColor.primary.cgColor
         $0.layer.cornerRadius = 5
     }
     
@@ -72,12 +70,11 @@ final class CreateViewController: UIViewController {
     private let mbtiTextField = UITextField().then {
         $0.backgroundColor = .white
         $0.font = .systemFont(ofSize: 14, weight: .regular)
-        $0.textColor = UIColor.gray1
-        $0.placeholder = "MBTI를 입력하세요"
+        $0.placeholder = "ISTP"
         $0.leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 14.0, height: 0.0))
         $0.leftViewMode = .always
         $0.layer.borderWidth = 1
-        $0.layer.borderColor = UIColor.gray2.cgColor
+        $0.layer.borderColor = UIColor.primary.cgColor
         $0.layer.cornerRadius = 5
     }
     
@@ -96,7 +93,7 @@ final class CreateViewController: UIViewController {
     private let memoTextView = UITextField().then {
         $0.backgroundColor = .white
         $0.layer.borderWidth = 1
-        $0.layer.borderColor = UIColor.gray2.cgColor
+        $0.layer.borderColor = UIColor.primary.cgColor
         $0.layer.cornerRadius = 5
         $0.leftView = UIView(frame: CGRect(x: 0.0, y: 0.0, width: 14.0, height: 0.0))
         $0.leftViewMode = .always
@@ -116,15 +113,15 @@ final class CreateViewController: UIViewController {
     
     private lazy var selectImgButton: UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named:"select_img"), for: .normal)
-        button.addTarget(self, action: #selector(touchupselectImgButton), for:.touchUpInside)
+        button.setImage(UIImage(named:"selected_img"), for: .normal)
+        // button.addTarget(self, action: #selector(touchupselectImgButton), for:.touchUpInside)
         return button
     }()
     
-    private lazy var addButton: UIButton = {
+    private lazy var modifyButton: UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named:"add_button"), for: .normal)
-        // button.addTarget(self, action: #selector(touchupaddButton), for:.touchUpInside)
+        button.setImage(UIImage(named:"modify_button"), for: .normal)
+        // button.addTarget(self, action: #selector(touchupmodifyButton), for:.touchUpInside)
         return button
     }()
     
@@ -143,17 +140,12 @@ final class CreateViewController: UIViewController {
     private func touchupBackButton() {
         self.dismiss(animated:true, completion:nil)
     }
-
-    @objc
-    private func touchupselectImgButton() {
-        selectImgButton.setImage(UIImage(named: "selected_img"), for: .normal)
-    }
 }
 
-extension CreateViewController {
+extension ModifyViewController {
     private func layout() {
       
-        [mainLabel, backButton, nameLabel, nameTextField, birthLabel, birthTextField, mbtiLabel, mbtiTextField, memoLabel,memoTextView, colorLabel,collectionView, imgLabel, selectImgButton, addButton].forEach {
+        [mainLabel, backButton, nameLabel, nameTextField, birthLabel, birthTextField, mbtiLabel, mbtiTextField, memoLabel,memoTextView, colorLabel,collectionView, imgLabel, selectImgButton, modifyButton].forEach {
             view.addSubview($0)
         }
         
@@ -233,13 +225,13 @@ extension CreateViewController {
             $0.height.equalTo(84)
         }
         
-        addButton.snp.makeConstraints {
+        modifyButton.snp.makeConstraints {
             $0.top.equalTo(self.selectImgButton.snp.bottom).offset(24)
             $0.leading.trailing.equalToSuperview().inset(18)
         }
     }
 }
-extension CreateViewController {
+extension ModifyViewController {
     func setupDataSource(){
        dataSource = UICollectionViewDiffableDataSource<Section,AnyHashable>(collectionView: collectionView, cellProvider: { (collectionView, indexPath, item) in
            guard let cell =  collectionView.dequeueReusableCell(withReuseIdentifier: CreateBtnCell.reuserId,for : indexPath) as? CreateBtnCell else {return UICollectionViewCell()}
@@ -264,7 +256,7 @@ extension CreateViewController {
        snapShot.appendItems(btnList,toSection: .main)
    }
 }
-extension CreateViewController : UICollectionViewDelegate{
+extension ModifyViewController : UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath)
     }

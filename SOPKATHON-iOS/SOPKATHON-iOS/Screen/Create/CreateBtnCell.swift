@@ -13,7 +13,7 @@ class CreateBtnCell: UICollectionViewCell {
     static let reuserId : String = "CreateBtnCell"
     private lazy var vStack = UIStackView(arrangedSubviews: [btnImage,btnTitle]).then{
         $0.axis = .vertical
-        $0.spacing = 5
+        
     }
     override var isSelected: Bool {
         didSet{
@@ -25,6 +25,8 @@ class CreateBtnCell: UICollectionViewCell {
     }
     private lazy var btnTitle = UILabel().then {
         $0.text = "상"
+        $0.textColor = UIColor.gray2
+        $0.font = .systemFont(ofSize: 12, weight: .bold)
         $0.textAlignment = .center
     }
 

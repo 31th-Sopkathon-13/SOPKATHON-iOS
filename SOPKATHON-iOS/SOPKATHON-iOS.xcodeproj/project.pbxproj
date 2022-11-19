@@ -32,6 +32,7 @@
 		4AFDAC1129291CE000DA413E /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFDAC1029291CE000DA413E /* UIViewController+.swift */; };
 		6CACA112292969A400597C7C /* CreateBtnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CACA111292969A400597C7C /* CreateBtnCell.swift */; };
 		6CACA11429296A7700597C7C /* BtnList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CACA11329296A7700597C7C /* BtnList.swift */; };
+		6CACA11729297B4500597C7C /* ModifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CACA11629297B4500597C7C /* ModifyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		6CACA110292945D800597C7C /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Regular.otf"; path = "../../../../../../../Downloads/Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		6CACA111292969A400597C7C /* CreateBtnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBtnCell.swift; sourceTree = "<group>"; };
 		6CACA11329296A7700597C7C /* BtnList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnList.swift; sourceTree = "<group>"; };
+		6CACA11629297B4500597C7C /* ModifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -259,6 +261,7 @@
 		6CACA11529297A4D00597C7C /* Modify */ = {
 			isa = PBXGroup;
 			children = (
+				6CACA11629297B4500597C7C /* ModifyViewController.swift */,
 			);
 			path = Modify;
 			sourceTree = "<group>";
@@ -350,6 +353,7 @@
 				4AFDABD42928FD1300DA413E /* AppDelegate.swift in Sources */,
 				4AFDAC0D29290DA500DA413E /* DataModel.swift in Sources */,
 				4AFDAC1129291CE000DA413E /* UIViewController+.swift in Sources */,
+				6CACA11729297B4500597C7C /* ModifyViewController.swift in Sources */,
 				4AFDAC0729290D9000DA413E /* NetworkConstant.swift in Sources */,
 				4AFDAC0B29290DA100DA413E /* API.swift in Sources */,
 				6CACA112292969A400597C7C /* CreateBtnCell.swift in Sources */,
