@@ -36,7 +36,7 @@ final class MainViewController: UIViewController {
     private lazy var safeArea = self.view.safeAreaLayoutGuide
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = .white
+        self.view.backgroundColor = .clear
         setViews()
         setConstraints()
         registerSubViews()
