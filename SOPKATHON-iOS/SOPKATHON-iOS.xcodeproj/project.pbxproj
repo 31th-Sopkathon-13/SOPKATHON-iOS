@@ -10,6 +10,7 @@
 		4ADEAB9E29291EAA001B63E3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4ADEAB9D29291EAA001B63E3 /* SnapKit */; };
 		4ADEABA129291EB3001B63E3 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 4ADEABA029291EB3001B63E3 /* Then */; };
 		4ADEABA429291EBF001B63E3 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4ADEABA329291EBF001B63E3 /* Moya */; };
+		4ADEABAA29293B9E001B63E3 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADEABA929293B9E001B63E3 /* UIFont+.swift */; };
 		4AFDABD42928FD1300DA413E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFDABD32928FD1300DA413E /* AppDelegate.swift */; };
 		4AFDABD62928FD1300DA413E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFDABD52928FD1300DA413E /* SceneDelegate.swift */; };
 		4AFDABDD2928FD1400DA413E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AFDABDC2928FD1400DA413E /* Assets.xcassets */; };
@@ -31,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4ADEABA629293AA1001B63E3 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Medium.otf"; path = "../../../../../../../Downloads/Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		4ADEABA729293AA1001B63E3 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Regular.otf"; path = "../../../../../../../Downloads/Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		4ADEABA829293B71001B63E3 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Bold.otf"; path = "../../../../../../../Downloads/Pretendard-1.3.6/public/static/Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		4ADEABA929293B9E001B63E3 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		4AFDABD02928FD1300DA413E /* SOPKATHON-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOPKATHON-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFDABD32928FD1300DA413E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AFDABD52928FD1300DA413E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +72,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4ADEABA529293A65001B63E3 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				4ADEABA829293B71001B63E3 /* Pretendard-Bold.otf */,
+				4ADEABA629293AA1001B63E3 /* Pretendard-Medium.otf */,
+				4ADEABA729293AA1001B63E3 /* Pretendard-Regular.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		4AFDABC72928FD1300DA413E = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +112,7 @@
 		4AFDABE729290B0F00DA413E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				4ADEABA529293A65001B63E3 /* Font */,
 				4AFDABED29290B2D00DA413E /* Storyboard */,
 				4AFDABEC29290B2800DA413E /* Support */,
 				4AFDABEB29290B2500DA413E /* Asset */,
@@ -225,6 +241,7 @@
 			children = (
 				4AFDAC0E29290DD000DA413E /* UIView+.swift */,
 				4AFDAC1029291CE000DA413E /* UIViewController+.swift */,
+				4ADEABA929293B9E001B63E3 /* UIFont+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -310,6 +327,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AFDAC0129290C9100DA413E /* MoyaLoggingPlugin.swift in Sources */,
+				4ADEABAA29293B9E001B63E3 /* UIFont+.swift in Sources */,
 				4AFDAC0929290D9D00DA413E /* Service.swift in Sources */,
 				4AFDABF429290BC500DA413E /* CreateViewController.swift in Sources */,
 				4AFDABD42928FD1300DA413E /* AppDelegate.swift in Sources */,
