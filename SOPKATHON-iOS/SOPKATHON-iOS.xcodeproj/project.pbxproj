@@ -33,9 +33,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4ADEABA629293AA1001B63E3 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Medium.otf"; path = "../../../../../../../Downloads/Pretendard-Medium.otf"; sourceTree = "<group>"; };
-		4ADEABA729293AA1001B63E3 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Regular.otf"; path = "../../../../../../../Downloads/Pretendard-Regular.otf"; sourceTree = "<group>"; };
-		4ADEABA829293B71001B63E3 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Bold.otf"; path = "../../../../../../../Downloads/Pretendard-1.3.6/public/static/Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		4ADEABA929293B9E001B63E3 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		4ADEABAB29293DF1001B63E3 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		4AFDABD02928FD1300DA413E /* SOPKATHON-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOPKATHON-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,6 +55,9 @@
 		4AFDAC0C29290DA500DA413E /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		4AFDAC0E29290DD000DA413E /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		4AFDAC1029291CE000DA413E /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		4CBFA7AC2929466500066DB7 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Regular.otf"; path = "../../../../../../../Downloads/Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		4CBFA7AD2929466600066DB7 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Bold.otf"; path = "../../../../../../../Downloads/Pretendard-Bold.otf"; sourceTree = "<group>"; };
+		4CBFA7AE2929466600066DB7 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Medium.otf"; path = "../../../../../../../Downloads/Pretendard-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +77,9 @@
 		4ADEABA529293A65001B63E3 /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				4ADEABA829293B71001B63E3 /* Pretendard-Bold.otf */,
-				4ADEABA629293AA1001B63E3 /* Pretendard-Medium.otf */,
-				4ADEABA729293AA1001B63E3 /* Pretendard-Regular.otf */,
+				4CBFA7AD2929466600066DB7 /* Pretendard-Bold.otf */,
+				4CBFA7AE2929466600066DB7 /* Pretendard-Medium.otf */,
+				4CBFA7AC2929466500066DB7 /* Pretendard-Regular.otf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
