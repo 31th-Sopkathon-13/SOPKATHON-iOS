@@ -33,6 +33,7 @@
 		4AFDAC0D29290DA500DA413E /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFDAC0C29290DA500DA413E /* DataModel.swift */; };
 		4AFDAC0F29290DD000DA413E /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFDAC0E29290DD000DA413E /* UIView+.swift */; };
 		4AFDAC1129291CE000DA413E /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFDAC1029291CE000DA413E /* UIViewController+.swift */; };
+		4C792C3729298605003AB3D4 /* DetailDropdownViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C792C3629298605003AB3D4 /* DetailDropdownViewController.swift */; };
 		4CBFA7B329294D7700066DB7 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFA7B229294D7700066DB7 /* OnboardingViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		4AFDAC0C29290DA500DA413E /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		4AFDAC0E29290DD000DA413E /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		4AFDAC1029291CE000DA413E /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		4C792C3629298605003AB3D4 /* DetailDropdownViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailDropdownViewController.swift; sourceTree = "<group>"; };
 		4CBFA7B229294D7700066DB7 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = "Onboarding 02-43-21-275/OnboardingViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -189,6 +191,7 @@
 			isa = PBXGroup;
 			children = (
 				4AFDABF129290BBC00DA413E /* DetailViewController.swift */,
+				4C792C3629298605003AB3D4 /* DetailDropdownViewController.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				4AFDABD62928FD1300DA413E /* SceneDelegate.swift in Sources */,
 				4AFDAC0F29290DD000DA413E /* UIView+.swift in Sources */,
 				4AFDABF229290BBC00DA413E /* DetailViewController.swift in Sources */,
+				4C792C3729298605003AB3D4 /* DetailDropdownViewController.swift in Sources */,
 				4AFDABFF29290C4800DA413E /* NetworkResult.swift in Sources */,
 				4AFDAC0329290D5600DA413E /* GeneralResponse.swift in Sources */,
 				4ADEABAC29293DF1001B63E3 /* UIColor+.swift in Sources */,

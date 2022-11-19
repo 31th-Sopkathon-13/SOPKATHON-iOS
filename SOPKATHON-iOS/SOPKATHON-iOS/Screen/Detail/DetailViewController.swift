@@ -15,6 +15,32 @@ final class DetailViewController: UIViewController {
     
     // MARK: - UI Components
     
+    private let backgroundImageView: UIImageView = {
+        let view = UIImageView()
+        view.image = UIImage(named: "bg_lp_detail")
+        return view
+    }()
+    
+    private let navigationView: UIView = {
+        let view = UIView()
+        view.backgroundColor = .clear
+        return view
+    }()
+    
+    private let backButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(named:"ic_back"), for: .normal)
+        button.addTarget(self, action: #selector(touchupBackButton), for:.touchUpInside)
+        return button
+    }()
+    
+    private let menuButton: UIButton = {
+        let button = UIButton()
+        button.setImage(UIImage(named: "ic_menu"), for: .normal)
+        button.addTarget(self, action: #selector(touchupMenuButton), for:.touchUpInside)
+        return button
+    }()
+    
     private let detailView: UIView = {
         let view = UIView()
         view.backgroundColor = .white.withAlphaComponent(0.8)
@@ -105,6 +131,21 @@ final class DetailViewController: UIViewController {
         
         layout()
     }
+    
+    private func pushToDetailDropdownVC() {
+        let detailDropDownVC = DetailDropdownViewController()
+        self.navigationController?.pushViewController (detailDropDownVC, animated: true)
+    }
+    
+    @objc
+    private func touchupMenuButton() {
+        pushToDetailDropdownVC()
+    }
+    
+    @objc
+    private func touchupBackButton() {
+        self.navigationController?.popViewController(animated: true)
+    }
 }
 
 
@@ -112,12 +153,37 @@ final class DetailViewController: UIViewController {
 
 extension DetailViewController {
     private func layout() {
-        [detailView].forEach {
+        [backgroundImageView,navigationView, detailView].forEach {
             view.addSubview($0)
+        }
+        
+        [backButton, menuButton].forEach {
+            navigationView.addSubview($0)
         }
         
         [nameLabel, birthdayLabel, birthdayDataLabel, mbtiLabel, mbtiDataLabel, memoLabel, memoDataLabel].forEach {
             detailView.addSubview($0)
+        }
+        backgroundImageView.snp.makeConstraints {
+            $0.edges.equalToSuperview()
+        }
+        
+        navigationView.snp.makeConstraints {
+            $0.leading.trailing.equalToSuperview()
+            $0.top.equalToSuperview().offset(75)
+            $0.height.equalTo(44)
+        }
+        
+        backButton.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview()
+            $0.leading.equalTo(self.navigationView.snp.leading).offset(23)
+            $0.width.equalTo(44)
+        }
+        
+        menuButton.snp.makeConstraints {
+            $0.top.bottom.equalToSuperview()
+            $0.trailing.equalTo(self.navigationView.snp.trailing).inset(23)
+            $0.width.equalTo(44)
         }
         
         detailView.snp.makeConstraints {
