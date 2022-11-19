@@ -55,7 +55,25 @@ final class DetailViewController: UIViewController {
         return label
     }()
     
-
+    private let mbtiLabel: UILabel = {
+        let label = UILabel()
+        label.text = "MBTI"
+        label.textColor = .gray1
+        /*
+        label.font = .Pretendard(.bold, size: 14)
+        */
+        return label
+    }()
+    
+    private let mbtiDataLabel: UILabel = {
+        let label = UILabel()
+        label.text = "ISTP"
+        label.textColor = .gray1
+        /*
+        label.font = .Pretendard(.bold, size: 14)
+        */
+        return label
+    }()
     
     
     // MARK: - Life Cycles
@@ -77,7 +95,7 @@ extension DetailViewController {
             view.addSubview($0)
         }
         
-        [nameLabel, birthdayLabel, birthdayDataLabel].forEach {
+        [nameLabel, birthdayLabel, birthdayDataLabel, mbtiLabel, mbtiDataLabel].forEach {
             detailView.addSubview($0)
         }
         
@@ -104,8 +122,22 @@ extension DetailViewController {
         
         birthdayDataLabel.snp.makeConstraints {
             $0.top.equalTo(self.nameLabel.snp.bottom).offset(38)
-            $0.leading.equalTo(self.birthdayLabel.snp.trailing).offset(23)
+            $0.leading.equalTo(self.birthdayLabel.snp.trailing).offset(25)
             $0.width.equalTo(85)
+            $0.height.equalTo(17)
+        }
+        
+        mbtiLabel.snp.makeConstraints {
+            $0.top.equalTo(self.birthdayLabel.snp.bottom).offset(10)
+            $0.leading.equalTo(self.nameLabel)
+            $0.width.equalTo(40)
+            $0.height.equalTo(17)
+        }
+        
+        mbtiDataLabel.snp.makeConstraints {
+            $0.top.equalTo(self.birthdayLabel.snp.bottom).offset(10)
+            $0.leading.equalTo(self.mbtiLabel.snp.trailing).offset(15)
+            $0.width.equalTo(40)
             $0.height.equalTo(17)
         }
     }
