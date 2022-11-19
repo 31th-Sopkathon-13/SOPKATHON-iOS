@@ -7,11 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090AEA38292941A2009FF50D /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AEA37292941A2009FF50D /* SubView.swift */; };
+		090AEA3C29294554009FF50D /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 090AEA3929294554009FF50D /* Pretendard-Bold.otf */; };
+		090AEA3D29294554009FF50D /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 090AEA3A29294554009FF50D /* Pretendard-Regular.otf */; };
+		090AEA3E29294554009FF50D /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 090AEA3B29294554009FF50D /* Pretendard-Medium.otf */; };
+		090AEA4D292960B1009FF50D /* PersonId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AEA4A292960B1009FF50D /* PersonId.swift */; };
+		090AEA4F292960B1009FF50D /* MainImageView .swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AEA4C292960B1009FF50D /* MainImageView .swift */; };
+		090AEA61292961D0009FF50D /* MainSecondCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AEA5E292961D0009FF50D /* MainSecondCell.swift */; };
+		090AEA62292961D0009FF50D /* MainThirdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AEA5F292961D0009FF50D /* MainThirdCell.swift */; };
+		090AEA63292961D0009FF50D /* MainFirstCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AEA60292961D0009FF50D /* MainFirstCell.swift */; };
 		4ADEAB9E29291EAA001B63E3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4ADEAB9D29291EAA001B63E3 /* SnapKit */; };
 		4ADEABA129291EB3001B63E3 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 4ADEABA029291EB3001B63E3 /* Then */; };
 		4ADEABA429291EBF001B63E3 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4ADEABA329291EBF001B63E3 /* Moya */; };
 		4ADEABAA29293B9E001B63E3 /* UIFont+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADEABA929293B9E001B63E3 /* UIFont+.swift */; };
 		4ADEABAC29293DF1001B63E3 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADEABAB29293DF1001B63E3 /* UIColor+.swift */; };
+		4ADEABAE292959B0001B63E3 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		4ADEABAF292959B6001B63E3 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		4ADEABB0292959B8001B63E3 /* (null) in Resources */ = {isa = PBXBuildFile; };
+		4ADEABC5292962DB001B63E3 /* Pretendard-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ADEABC2292962DB001B63E3 /* Pretendard-Regular.otf */; };
+		4ADEABC6292962DB001B63E3 /* Pretendard-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ADEABC3292962DB001B63E3 /* Pretendard-Medium.otf */; };
+		4ADEABC7292962DB001B63E3 /* Pretendard-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4ADEABC4292962DB001B63E3 /* Pretendard-Bold.otf */; };
 		4AFDABD42928FD1300DA413E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFDABD32928FD1300DA413E /* AppDelegate.swift */; };
 		4AFDABD62928FD1300DA413E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AFDABD52928FD1300DA413E /* SceneDelegate.swift */; };
 		4AFDABDD2928FD1400DA413E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AFDABDC2928FD1400DA413E /* Assets.xcassets */; };
@@ -33,11 +48,18 @@
 		6CACA112292969A400597C7C /* CreateBtnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CACA111292969A400597C7C /* CreateBtnCell.swift */; };
 		6CACA11429296A7700597C7C /* BtnList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CACA11329296A7700597C7C /* BtnList.swift */; };
 		6CACA11729297B4500597C7C /* ModifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CACA11629297B4500597C7C /* ModifyViewController.swift */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXFileReference section */
+		4CBFA7B329294D7700066DB7 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CBFA7B229294D7700066DB7 /* OnboardingViewController.swift */; };
+		090AEA37292941A2009FF50D /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
+		090AEA4A292960B1009FF50D /* PersonId.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonId.swift; sourceTree = "<group>"; };
+		090AEA4C292960B1009FF50D /* MainImageView .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MainImageView .swift"; sourceTree = "<group>"; };
+		090AEA5E292961D0009FF50D /* MainSecondCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainSecondCell.swift; sourceTree = "<group>"; };
+		090AEA5F292961D0009FF50D /* MainThirdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainThirdCell.swift; sourceTree = "<group>"; };
+		090AEA60292961D0009FF50D /* MainFirstCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainFirstCell.swift; sourceTree = "<group>"; };
 		4ADEABA929293B9E001B63E3 /* UIFont+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+.swift"; sourceTree = "<group>"; };
 		4ADEABAB29293DF1001B63E3 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		4ADEABC2292962DB001B63E3 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Regular.otf"; sourceTree = "<group>"; };
+		4ADEABC3292962DB001B63E3 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Medium.otf"; sourceTree = "<group>"; };
+		4ADEABC4292962DB001B63E3 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Pretendard-Bold.otf"; sourceTree = "<group>"; };
 		4AFDABD02928FD1300DA413E /* SOPKATHON-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SOPKATHON-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4AFDABD32928FD1300DA413E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4AFDABD52928FD1300DA413E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +86,7 @@
 		6CACA111292969A400597C7C /* CreateBtnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateBtnCell.swift; sourceTree = "<group>"; };
 		6CACA11329296A7700597C7C /* BtnList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BtnList.swift; sourceTree = "<group>"; };
 		6CACA11629297B4500597C7C /* ModifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyViewController.swift; sourceTree = "<group>"; };
+		4CBFA7B229294D7700066DB7 /* OnboardingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = OnboardingViewController.swift; path = "Onboarding 02-43-21-275/OnboardingViewController.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +103,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090AEA5D292961D0009FF50D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				090AEA5E292961D0009FF50D /* MainSecondCell.swift */,
+				090AEA5F292961D0009FF50D /* MainThirdCell.swift */,
+				090AEA60292961D0009FF50D /* MainFirstCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		4ADEABC1292962DB001B63E3 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				4ADEABC2292962DB001B63E3 /* Pretendard-Regular.otf */,
+				4ADEABC3292962DB001B63E3 /* Pretendard-Medium.otf */,
+				4ADEABC4292962DB001B63E3 /* Pretendard-Bold.otf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		4AFDABC72928FD1300DA413E = {
 			isa = PBXGroup;
 			children = (
@@ -110,7 +153,7 @@
 		4AFDABE729290B0F00DA413E /* Resource */ = {
 			isa = PBXGroup;
 			children = (
-				6CACA10D292945CF00597C7C /* Font */,
+				4ADEABC1292962DB001B63E3 /* Font */,
 				4AFDABED29290B2D00DA413E /* Storyboard */,
 				4AFDABEC29290B2800DA413E /* Support */,
 				4AFDABEB29290B2500DA413E /* Asset */,
@@ -121,6 +164,7 @@
 		4AFDABE829290B1600DA413E /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				4CBFA7B129294D3E00066DB7 /* Onboarding */,
 				4AFDABF029290B6C00DA413E /* Detail */,
 				4AFDABEF29290B6300DA413E /* Create */,
 				6CACA11529297A4D00597C7C /* Modify */,
@@ -177,7 +221,11 @@
 		4AFDABEE29290B4C00DA413E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				090AEA5D292961D0009FF50D /* Cell */,
+				090AEA4C292960B1009FF50D /* MainImageView .swift */,
+				090AEA4A292960B1009FF50D /* PersonId.swift */,
 				4AFDABF529290BD500DA413E /* MainViewController.swift */,
+				090AEA37292941A2009FF50D /* SubView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -248,25 +296,20 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
-		6CACA10D292945CF00597C7C /* Font */ = {
-			isa = PBXGroup;
-			children = (
-				6CACA10E292945D800597C7C /* Pretendard-Bold.otf */,
-				6CACA10F292945D800597C7C /* Pretendard-Medium.otf */,
-				6CACA110292945D800597C7C /* Pretendard-Regular.otf */,
-			);
-			path = Font;
-			sourceTree = "<group>";
-		};
 		6CACA11529297A4D00597C7C /* Modify */ = {
 			isa = PBXGroup;
 			children = (
 				6CACA11629297B4500597C7C /* ModifyViewController.swift */,
 			);
 			path = Modify;
+		4CBFA7B129294D3E00066DB7 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				4CBFA7B229294D7700066DB7 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
 			sourceTree = "<group>";
 		};
-/* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
 		4AFDABCF2928FD1300DA413E /* SOPKATHON-iOS */ = {
@@ -334,8 +377,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4ADEABC6292962DB001B63E3 /* Pretendard-Medium.otf in Resources */,
+				4ADEABC7292962DB001B63E3 /* Pretendard-Bold.otf in Resources */,
 				4AFDABE02928FD1400DA413E /* LaunchScreen.storyboard in Resources */,
+				4ADEABC5292962DB001B63E3 /* Pretendard-Regular.otf in Resources */,
+				4ADEABAE292959B0001B63E3 /* (null) in Resources */,
+				4ADEABB0292959B8001B63E3 /* (null) in Resources */,
 				4AFDABDD2928FD1400DA413E /* Assets.xcassets in Resources */,
+				4ADEABAF292959B6001B63E3 /* (null) in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,25 +396,32 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AFDAC0129290C9100DA413E /* MoyaLoggingPlugin.swift in Sources */,
+				090AEA4F292960B1009FF50D /* MainImageView .swift in Sources */,
 				4ADEABAA29293B9E001B63E3 /* UIFont+.swift in Sources */,
 				4AFDAC0929290D9D00DA413E /* Service.swift in Sources */,
 				4AFDABF429290BC500DA413E /* CreateViewController.swift in Sources */,
+				4CBFA7B329294D7700066DB7 /* OnboardingViewController.swift in Sources */,
 				4AFDABD42928FD1300DA413E /* AppDelegate.swift in Sources */,
 				4AFDAC0D29290DA500DA413E /* DataModel.swift in Sources */,
 				4AFDAC1129291CE000DA413E /* UIViewController+.swift in Sources */,
 				6CACA11729297B4500597C7C /* ModifyViewController.swift in Sources */,
 				4AFDAC0729290D9000DA413E /* NetworkConstant.swift in Sources */,
+				090AEA38292941A2009FF50D /* SubView.swift in Sources */,
 				4AFDAC0B29290DA100DA413E /* API.swift in Sources */,
 				6CACA112292969A400597C7C /* CreateBtnCell.swift in Sources */,
 				4AFDAC0529290D7300DA413E /* BaseTargetType.swift in Sources */,
+				090AEA61292961D0009FF50D /* MainSecondCell.swift in Sources */,
 				4AFDABFD29290C2C00DA413E /* URLConstant.swift in Sources */,
 				6CACA11429296A7700597C7C /* BtnList.swift in Sources */,
 				4AFDABF629290BD500DA413E /* MainViewController.swift in Sources */,
 				4AFDABD62928FD1300DA413E /* SceneDelegate.swift in Sources */,
+				090AEA4D292960B1009FF50D /* PersonId.swift in Sources */,
+				090AEA63292961D0009FF50D /* MainFirstCell.swift in Sources */,
 				4AFDAC0F29290DD000DA413E /* UIView+.swift in Sources */,
 				4AFDABF229290BBC00DA413E /* DetailViewController.swift in Sources */,
 				4AFDABFF29290C4800DA413E /* NetworkResult.swift in Sources */,
 				4AFDAC0329290D5600DA413E /* GeneralResponse.swift in Sources */,
+				090AEA62292961D0009FF50D /* MainThirdCell.swift in Sources */,
 				4ADEABAC29293DF1001B63E3 /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
