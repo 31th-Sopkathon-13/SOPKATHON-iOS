@@ -14,8 +14,9 @@ class SubView: UIView {
     private lazy  var titleImage = UIImageView().then  {
         $0.image = UIImage(named: "Main/logo")
     }
-     lazy var btn = UIButton().then {
+    lazy var btn = UIButton().then {
         $0.setImage(UIImage(named: "Main/_Btn"), for: .normal)
+        $0.addTarget(self, action: #selector(btnTapped),for: .touchUpInside)
     }
     
     override init(frame: CGRect){
@@ -44,5 +45,8 @@ class SubView: UIView {
             $0.trailing.equalToSuperview().offset(-18)
             $0.centerY.equalToSuperview()
         }
+    }
+    @objc func btnTapped(){
+        print("tapped")
     }
 }
