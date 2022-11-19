@@ -32,7 +32,7 @@ class OnboardingViewController: UIViewController {
         return textField
     }()
     
-    private let enterButton: UIButton = {
+    private lazy var enterButton: UIButton = {
         let button = UIButton()
         button.setTitle("입장하기", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -40,6 +40,7 @@ class OnboardingViewController: UIViewController {
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.black.cgColor
         button.layer.cornerRadius = 28
+        button.addTarget(self, action: #selector(buttonDidtap), for: .touchUpInside)
         return button
     }()
     
@@ -50,6 +51,11 @@ class OnboardingViewController: UIViewController {
         view.backgroundColor = .white
         
         layout()
+    }
+    
+    @objc func buttonDidtap() {
+        let MainViewController = MainViewController()
+        self.navigationController?.pushViewController(MainViewController, animated: true)
     }
 
 }

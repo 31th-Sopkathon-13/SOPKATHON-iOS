@@ -121,10 +121,16 @@ final class CreateViewController: UIViewController {
     
     private lazy var addButton: UIButton = {
         let button = UIButton()
-        button.setImage(UIImage(named:"add_button"), for: .normal)
-        // button.addTarget(self, action: #selector(touchupaddButton), for:.touchUpInside)
+        button.setImage(UIImage(named:"Property"), for: .normal)
+        
+         button.addTarget(self, action: #selector(touchupaddButton), for:.touchUpInside)
+        
         return button
     }()
+    
+    @objc func touchupaddButton() {
+        self.dismiss(animated: true)
+    }
     
 
     

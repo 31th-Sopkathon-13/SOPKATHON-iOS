@@ -20,6 +20,13 @@ final class MainViewController: UIViewController {
     var dataSource : UICollectionViewDiffableDataSource<Sections,Item>! = nil
     private lazy var subView = SubView(frame: self.view.bounds).then{
         $0.backgroundColor = .clear
+        $0.rootVC = self
+    }
+    
+    func presentToCreate() {
+        let createVC = CreateViewController()
+        createVC.modalPresentationStyle = .overFullScreen
+        self.present(createVC, animated: true)
     }
     private lazy var backgroungView = UIImageView().then {
         $0.image = UIImage(named: "Main/Background")
@@ -41,6 +48,7 @@ final class MainViewController: UIViewController {
         registerSubViews()
         setupDataSource()
         reloadData()
+        self.navigationController?.isNavigationBarHidden = true
     }
     func registerSubViews(){
         collectionView.register(MainFirstCell.self, forCellWithReuseIdentifier: MainFirstCell.reuseId)
@@ -130,11 +138,17 @@ final class MainViewController: UIViewController {
         section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading:64, bottom: 0, trailing: 0)
        return section
    }
-   
+    
+    
+    private func pushToDetail() {
+        let detailVC = DetailViewController()
+        navigationController?.isNavigationBarHidden = true
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
 extension MainViewController : UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
-        print(indexPath)
+        pushToDetail()
     }
     
     
