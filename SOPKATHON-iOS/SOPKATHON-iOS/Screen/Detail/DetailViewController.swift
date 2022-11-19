@@ -16,9 +16,9 @@ final class DetailViewController: UIViewController {
     // MARK: - UI Components
     
     private let backgroundImageView: UIImageView = {
-        let view = UIImageView()
-        view.image = UIImage(named: "bg_lp_detail")
-        return view
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "bg_lp_detail")
+        return imageView
     }()
     
     private let navigationView: UIView = {
