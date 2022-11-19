@@ -20,7 +20,6 @@ final class MainViewController: UIViewController {
     var dataSource : UICollectionViewDiffableDataSource<Sections,Item>! = nil
     private lazy var subView = SubView(frame: self.view.bounds).then{
         $0.backgroundColor = .clear
-        $0.btn.addTarget(self, action: #selector(btnTapped),for: .touchUpInside)
     }
     private lazy var backgroungView = UIImageView().then {
         $0.image = UIImage(named: "Main/Background")
@@ -70,7 +69,7 @@ final class MainViewController: UIViewController {
 
         }
         collectionView.snp.makeConstraints {
-            $0.leading.equalTo(imageView.snp.trailing).offset(10)
+            $0.leading.equalTo(imageView.snp.trailing).offset(-54)
             $0.trailing.equalToSuperview()
             $0.top.equalTo(imageView.snp.top)
             $0.bottom.equalTo(imageView.snp.bottom)
@@ -105,7 +104,7 @@ final class MainViewController: UIViewController {
         snapshot.appendItems(s2_Name,toSection: .second)
         snapshot.appendItems(s3_Name,toSection: .third)
     }
-    func layout() -> UICollectionViewLayout{
+    func layout() -> UICollectionViewLayout {
         let layout = UICollectionViewCompositionalLayout { (sectionIndex, layoutEnvirnment) -> NSCollectionLayoutSection? in
             let section = Sections(rawValue: sectionIndex)!
             switch section {
@@ -116,7 +115,7 @@ final class MainViewController: UIViewController {
         let config = UICollectionViewCompositionalLayoutConfiguration()
         config.interSectionSpacing = 47
         layout.configuration = config
-            return layout
+        return layout
         }
     func normalSection() -> NSCollectionLayoutSection{
         let itemSize = NSCollectionLayoutSize(widthDimension: .absolute(108), heightDimension: .absolute(108))
@@ -128,14 +127,15 @@ final class MainViewController: UIViewController {
         let section = NSCollectionLayoutSection(group: group)
         section.interGroupSpacing = spacing
         section.orthogonalScrollingBehavior = .continuousGroupLeadingBoundary
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading:64, bottom: 0, trailing: 0)
        return section
    }
-    @objc private func btnTapped(){
-        print("tapped")
-    }
+   
 }
 extension MainViewController : UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath){
         print(indexPath)
     }
+    
+    
 }
