@@ -75,6 +75,27 @@ final class DetailViewController: UIViewController {
         return label
     }()
     
+    private let memoLabel: UILabel = {
+        let label = UILabel()
+        label.text = "메모"
+        label.textColor = .gray1
+        /*
+        label.font = .Pretendard(.bold, size: 14)
+        */
+        return label
+    }()
+    
+    private let memoDataLabel: UILabel = {
+        let label = UILabel()
+        label.numberOfLines = 4
+        label.text = "디자인 천재 세연이 S2\n턴테이블로 LP 노래 듣고\n필름카메라로 사진 찍는 것을 좋아함"
+        label.textColor = .gray1
+        /*
+        label.font = .Pretendard(.bold, size: 14)
+        */
+        return label
+    }()
+    
     
     // MARK: - Life Cycles
     
@@ -95,7 +116,7 @@ extension DetailViewController {
             view.addSubview($0)
         }
         
-        [nameLabel, birthdayLabel, birthdayDataLabel, mbtiLabel, mbtiDataLabel].forEach {
+        [nameLabel, birthdayLabel, birthdayDataLabel, mbtiLabel, mbtiDataLabel, memoLabel, memoDataLabel].forEach {
             detailView.addSubview($0)
         }
         
@@ -109,36 +130,36 @@ extension DetailViewController {
         nameLabel.snp.makeConstraints {
             $0.top.equalTo(self.detailView.snp.top).offset(24)
             $0.leading.equalTo(self.detailView.snp.leading).offset(44)
-            $0.width.equalTo(70)
-            $0.height.equalTo(24)
         }
         
         birthdayLabel.snp.makeConstraints {
             $0.top.equalTo(self.nameLabel.snp.bottom).offset(38)
             $0.leading.equalTo(self.nameLabel)
-            $0.width.equalTo(30)
-            $0.height.equalTo(17)
         }
         
         birthdayDataLabel.snp.makeConstraints {
             $0.top.equalTo(self.nameLabel.snp.bottom).offset(38)
-            $0.leading.equalTo(self.birthdayLabel.snp.trailing).offset(25)
-            $0.width.equalTo(85)
-            $0.height.equalTo(17)
+            $0.leading.equalTo(self.birthdayLabel.snp.trailing).offset(23)
         }
         
         mbtiLabel.snp.makeConstraints {
             $0.top.equalTo(self.birthdayLabel.snp.bottom).offset(10)
             $0.leading.equalTo(self.nameLabel)
-            $0.width.equalTo(40)
-            $0.height.equalTo(17)
         }
         
         mbtiDataLabel.snp.makeConstraints {
             $0.top.equalTo(self.birthdayLabel.snp.bottom).offset(10)
             $0.leading.equalTo(self.mbtiLabel.snp.trailing).offset(15)
-            $0.width.equalTo(40)
-            $0.height.equalTo(17)
+        }
+        
+        memoLabel.snp.makeConstraints {
+            $0.top.equalTo(self.mbtiLabel.snp.bottom).offset(10)
+            $0.leading.equalTo(self.nameLabel)
+        }
+        
+        memoDataLabel.snp.makeConstraints {
+            $0.top.equalTo(self.mbtiLabel.snp.bottom).offset(10)
+            $0.leading.equalTo(self.memoLabel.snp.trailing).offset(24)
         }
     }
 }
