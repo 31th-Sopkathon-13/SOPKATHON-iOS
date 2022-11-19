@@ -121,6 +121,7 @@
 			children = (
 				4AFDABF029290B6C00DA413E /* Detail */,
 				4AFDABEF29290B6300DA413E /* Create */,
+				6CACA11529297A4D00597C7C /* Modify */,
 				4AFDABEE29290B4C00DA413E /* Main */,
 			);
 			path = Screen;
@@ -253,6 +254,13 @@
 				6CACA110292945D800597C7C /* Pretendard-Regular.otf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		6CACA11529297A4D00597C7C /* Modify */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Modify;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
