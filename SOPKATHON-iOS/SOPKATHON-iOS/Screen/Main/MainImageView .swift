@@ -15,13 +15,13 @@ class MainImageView : UIView {
         $0.spacing = 47
     }
     private lazy var firstSection = UIImageView().then {
-        $0.image = UIImage(named: "Main/FirstSection")
+        $0.image = UIImage(named: "Main/SectionImage/FirstSection")
     }
     private lazy var secondSection = UIImageView().then {
-        $0.image = UIImage(named: "Main/SecondSection")
+        $0.image = UIImage(named: "Main/SectionImage/SecondSection")
     }
     private lazy var thirdSection = UIImageView().then {
-        $0.image = UIImage(named: "Main/ThirdSection")
+        $0.image = UIImage(named: "Main/SectionImage/ThirdSection")
     }
     override init(frame: CGRect) {
         super.init(frame: .zero)
