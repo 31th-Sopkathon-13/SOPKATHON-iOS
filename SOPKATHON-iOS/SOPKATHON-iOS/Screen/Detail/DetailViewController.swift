@@ -35,6 +35,26 @@ final class DetailViewController: UIViewController {
         return label
     }()
     
+    private let birthdayLabel: UILabel = {
+        let label = UILabel()
+        label.text = "생일"
+        label.textColor = .gray1
+        /*
+        label.font = .Pretendard(.bold, size: 14)
+        */
+        return label
+    }()
+    
+    private let birthdayDataLabel: UILabel = {
+        let label = UILabel()
+        label.text = "2001.02.16"
+        label.textColor = .gray1
+        /*
+        label.font = .Pretendard(.bold, size: 14)
+        */
+        return label
+    }()
+    
 
     
     
@@ -57,7 +77,7 @@ extension DetailViewController {
             view.addSubview($0)
         }
         
-        [nameLabel].forEach {
+        [nameLabel, birthdayLabel, birthdayDataLabel].forEach {
             detailView.addSubview($0)
         }
         
@@ -73,6 +93,20 @@ extension DetailViewController {
             $0.leading.equalTo(self.detailView.snp.leading).offset(44)
             $0.width.equalTo(70)
             $0.height.equalTo(24)
+        }
+        
+        birthdayLabel.snp.makeConstraints {
+            $0.top.equalTo(self.nameLabel.snp.bottom).offset(38)
+            $0.leading.equalTo(self.nameLabel)
+            $0.width.equalTo(30)
+            $0.height.equalTo(17)
+        }
+        
+        birthdayDataLabel.snp.makeConstraints {
+            $0.top.equalTo(self.nameLabel.snp.bottom).offset(38)
+            $0.leading.equalTo(self.birthdayLabel.snp.trailing).offset(23)
+            $0.width.equalTo(85)
+            $0.height.equalTo(17)
         }
     }
 }
