@@ -11,11 +11,8 @@ import Then
 import SnapKit
 
 class SubView: UIView {
-    private lazy  var titleLabel = UILabel().then  {
-        $0.numberOfLines = 0
-        $0.textAlignment = .center
-        $0.text = "Re ; code"
-        $0.font = UIFont(name: "Termina-Demi", size: 21.69)
+    private lazy  var titleImage = UIImageView().then  {
+        $0.image = UIImage(named: "Main/logo")
     }
      lazy var btn = UIButton().then {
         $0.setImage(UIImage(named: "Main/_Btn"), for: .normal)
@@ -32,13 +29,15 @@ class SubView: UIView {
     }
     
     func setViews(){
-        self.addSubview(titleLabel)
+        self.addSubview(titleImage)
         self.addSubview(btn)
     }
     func  setConstraints(){
-        titleLabel.snp.makeConstraints {
+        titleImage.snp.makeConstraints {
             $0.leading.equalTo(self).offset(18)
             $0.centerY.equalToSuperview()
+            $0.width.equalTo(110)
+            $0.height.equalTo(26)
         }
         btn.snp.makeConstraints {
             $0.width.height.equalTo(44)
