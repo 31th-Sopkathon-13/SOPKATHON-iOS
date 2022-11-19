@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090AEA3629294198009FF50D /* MainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AEA3529294198009FF50D /* MainCell.swift */; };
+		090AEA38292941A2009FF50D /* SubView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AEA37292941A2009FF50D /* SubView.swift */; };
 		4ADEAB9E29291EAA001B63E3 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4ADEAB9D29291EAA001B63E3 /* SnapKit */; };
 		4ADEABA129291EB3001B63E3 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 4ADEABA029291EB3001B63E3 /* Then */; };
 		4ADEABA429291EBF001B63E3 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 4ADEABA329291EBF001B63E3 /* Moya */; };
@@ -33,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		090AEA3529294198009FF50D /* MainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCell.swift; sourceTree = "<group>"; };
+		090AEA37292941A2009FF50D /* SubView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubView.swift; sourceTree = "<group>"; };
 		4ADEABA629293AA1001B63E3 /* Pretendard-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Medium.otf"; path = "../../../../../../../Downloads/Pretendard-Medium.otf"; sourceTree = "<group>"; };
 		4ADEABA729293AA1001B63E3 /* Pretendard-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Regular.otf"; path = "../../../../../../../Downloads/Pretendard-Regular.otf"; sourceTree = "<group>"; };
 		4ADEABA829293B71001B63E3 /* Pretendard-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pretendard-Bold.otf"; path = "../../../../../../../Downloads/Pretendard-1.3.6/public/static/Pretendard-Bold.otf"; sourceTree = "<group>"; };
@@ -181,6 +185,8 @@
 			isa = PBXGroup;
 			children = (
 				4AFDABF529290BD500DA413E /* MainViewController.swift */,
+				090AEA3529294198009FF50D /* MainCell.swift */,
+				090AEA37292941A2009FF50D /* SubView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -337,6 +343,8 @@
 				4AFDAC0D29290DA500DA413E /* DataModel.swift in Sources */,
 				4AFDAC1129291CE000DA413E /* UIViewController+.swift in Sources */,
 				4AFDAC0729290D9000DA413E /* NetworkConstant.swift in Sources */,
+				090AEA3629294198009FF50D /* MainCell.swift in Sources */,
+				090AEA38292941A2009FF50D /* SubView.swift in Sources */,
 				4AFDAC0B29290DA100DA413E /* API.swift in Sources */,
 				4AFDAC0529290D7300DA413E /* BaseTargetType.swift in Sources */,
 				4AFDABFD29290C2C00DA413E /* URLConstant.swift in Sources */,
