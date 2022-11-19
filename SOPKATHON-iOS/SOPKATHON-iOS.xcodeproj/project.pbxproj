@@ -302,6 +302,7 @@
 				6CACA11629297B4500597C7C /* ModifyViewController.swift */,
 			);
 			path = Modify;
+		};
 		4CBFA7B129294D3E00066DB7 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
