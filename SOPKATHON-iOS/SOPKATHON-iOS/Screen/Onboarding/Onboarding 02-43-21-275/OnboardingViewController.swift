@@ -18,13 +18,14 @@ class OnboardingViewController: UIViewController {
         let label = UILabel()
         label.text = "소중한 관계를 기록해보세요"
         label.textColor = .black
-        label.font = UIFont(name: "Pretendard-Bold", size: 20)
+        label.font = .Pretendard(.bold, size: 20)
         return label
     }()
     
     private let nameTextField: UITextField = {
         let textField = UITextField()
         textField.placeholder = "이름을 입력하세요"
+        textField.font = .Pretendard(.regular, size: 18)
         textField.textAlignment = .center
         textField.layer.borderColor = UIColor.black.cgColor
         textField.layer.borderWidth = 1
@@ -36,7 +37,7 @@ class OnboardingViewController: UIViewController {
         let button = UIButton()
         button.setTitle("입장하기", for: .normal)
         button.setTitleColor(.black, for: .normal)
-        button.titleLabel?.font = UIFont(name: "Pretendard-Bold", size: 20)
+        button.titleLabel?.font = .Pretendard(.bold, size: 20)
         button.layer.borderWidth = 1
         button.layer.borderColor = UIColor.black.cgColor
         button.layer.cornerRadius = 28
